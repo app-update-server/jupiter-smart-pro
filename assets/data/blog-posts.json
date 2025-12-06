@@ -1,0 +1,35 @@
+[
+
+{
+  "id": "jupiter-smart-lite-controle-financeiro-solidario",
+  "title": "Júpiter Smart Lite: O Controle Financeiro Offline e Solidário para Iniciantes",
+  "date": "06 Dez 2025",
+  "author": "Equipe Júpiter",
+  "category": "Educação Financeira",
+  "image": "assets/img/posts/capa-jupiter-lite-solidario.webp",
+  "summary": "Descubra a versão 100% offline e solidária do ecossistema Júpiter. A opção ideal para iniciantes organizarem as finanças no PC sem complexidade.",
+  "contentUrl": "assets/posts/jupiter-lite-solidario.html"
+},
+
+{
+    "id": "importancia-controle-financeiro",
+    "title": "Por Que o Controle Financeiro É Essencial para Sua Vida",
+    "date": "05 Dez 2025",
+    "author": "Equipe Júpiter",
+    "category": "Educação Financeira",
+    "image": "assets/img/posts/controle-financeiro-importancia.webp", 
+    "summary": "Descubra como o controle financeiro traz segurança, liberdade e clareza para suas decisões pessoais e profissionais.",
+    "contentUrl": "assets/posts/importancia-controle-financeiro.html"
+  },
+ 
+  {
+    "id": "controle-financeiro-jupiter-pro",
+    "title": "Júpiter Smart Pro gerenciamento financeiro pessoal offline",
+    "date": "05 Dez 2025",
+    "author": "Equipe Júpiter",
+    "category": "Educação Financeira",
+    "image": "assets/img/posts/controle-financeiro-jupiter-pro.webp", 
+    "summary": "Guia completo do Júpiter Smart Pro: controle financeiro offline, seguro e inteligente. Domine suas finanças com tutorial passo a passo!",
+    "contentUrl": "assets/posts/controle-financeiro-jupiter-pro.html"
+  }
+]
