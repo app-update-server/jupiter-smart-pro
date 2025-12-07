@@ -1431,60 +1431,33 @@ body.dark-mode .cta-bg-icon {
     100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0); }
 }
 
-/* --- RESPONSIVIDADE CRÍTICA DO CTA (MOBILE) --- */
+/* --- RESPONSIVIDADE CRÍTICA (MOBILE) --- */
 @media (max-width: 768px) {
     .cta-box-premium {
-        /* [CORREÇÃO ELITE] Transforma de "Faixa" para "Card" */
-        margin: 40px 0; /* Mantém dentro das margens do site */
-        padding: 30px 20px;
-        border: 2px solid var(--accent); /* Restaura a borda completa */
-        border-radius: 16px; /* Restaura as curvas */
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        padding: 30px 20px; /* Menos padding lateral */
+        margin: 40px -20px; /* "Estoura" a margem do artigo para ocupar a tela toda */
+        border-radius: 0; /* Tira o arredondamento no mobile para parecer nativo */
+        border-left: none;
+        border-right: none;
     }
 
-    /* Ajuste de tipografia para não ficar gigante no celular */
-    .cta-box-premium h3 {
-        font-size: 1.5rem;
-    }
-
-    /* Força a lista a ficar vertical e alinhada */
+    /* Força a lista a ficar vertical no celular */
     .cta-features {
-        flex-direction: column;
+        flex-direction: column; /* Um item abaixo do outro */
         gap: 12px;
-        align-items: center; /* Centraliza os itens */
+        align-items: stretch; /* Estica os itens */
     }
 
     .cta-features li {
-        width: 100%; /* Ocupa a largura disponível */
-        justify-content: center; /* Texto no meio */
-        font-size: 0.9rem;
+        justify-content: center; /* Centraliza o texto das pílulas */
+        width: 100%;
     }
     
-    /* Preço ajustado */
-    .cta-price { 
-        flex-direction: column; 
-        gap: 5px; 
-    }
-    
-    .cta-price .new {
-        font-size: 1.8rem; /* Levemente menor para não quebrar */
-    }
+    /* Preço empilhado */
+    .cta-price { flex-direction: column; gap: 5px; }
 
-    /* Botão ocupa toda a largura disponível */
-    .btn-cta-pulse { 
-        width: 100%; 
-        display: flex; /* Garante centralização do texto */
-        justify-content: center;
-        align-items: center;
-    }
-    
-    /* Ajuste do ícone de fundo para não atrapalhar a leitura */
-    .cta-bg-icon {
-        opacity: 0.03;
-        font-size: 8rem;
-        bottom: -10px;
-        right: -10px;
-    }
+    /* Botão ocupa toda a largura */
+    .btn-cta-pulse { width: 100%; display: block; }
 }
 
 /* =========================================
