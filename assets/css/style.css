@@ -2248,7 +2248,7 @@ body.dark-mode .share-copy:hover {
 .brand-subtitle {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 0.68rem; /* AUMENTE OU DIMINUA SUBTITULO DA LOGO (ex: 0.8rem ou 12px) */
+    font-size: 0.61rem; /* AUMENTE OU DIMINUA SUBTITULO DA LOGO (ex: 0.8rem ou 12px) */
     color: var(--accent); /* Laranja */
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -2257,13 +2257,13 @@ body.dark-mode .share-copy:hover {
 /* --- AJUSTE PARA CELULAR (MOBILE) --- */
 @media (max-width: 480px) {
     .brand-icon-img {
-        height: 35px; /* Diminui um pouco no celular para não quebrar */
+        height: 27px !important; /* Diminui um pouco no celular para não quebrar */
     }
     .brand-title {
-        font-size: 1.1rem; /* TAMANHO DO TITULO LOGO NO CELULAR */
+        font-size: 1.0rem; /* TAMANHO DO TITULO LOGO NO CELULAR */
     }
     .brand-subtitle {
-        font-size: 0.6rem; /* TAMANHO DO SUBTITULO NO CELULAR */
+        font-size: 0.4rem; /* TAMANHO DO SUBTITULO NO CELULAR */
     }
     .brand-logo-full {
         gap: 8px;
@@ -2284,4 +2284,65 @@ body.dark-mode .brand-title {
 /* Opcional: Se quiser a logo do rodapé levemente menor que a do topo */
 .footer-brand-ajuste .brand-icon-img {
     height: 35px !important; /* Um pouco mais discreto no rodapé */
+}
+
+/* =========================================
+   OTIMIZAÇÃO MOBILE ELITE (CORREÇÃO FINAL)
+   ========================================= */
+
+@media (max-width: 480px) {
+    /* 1. Esconde o texto "Voltar" de forma agressiva */
+    .back-link {
+        font-size: 0 !important; /* Some com o texto */
+    }
+    
+    /* 2. Estiliza a Seta (Ícone) como Botão Circular */
+    .back-link i {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        
+        width: 36px;  /* Tamanho confortável */
+        height: 36px;
+        
+        background-color: var(--bg-body); 
+        border: 1px solid var(--border); 
+        border-radius: 50%; 
+        
+        color: var(--primary); 
+        font-size: 1rem !important; /* Restaura o tamanho do ícone */
+        margin: 0 !important; /* Remove margens extras */
+    }
+
+    /* 3. Ajuste da Logo para caber "JUPITER SMART PRO" */
+    .brand-logo-full {
+        gap: 6px; /* Aproxima o ícone do texto */
+        flex-shrink: 1; /* Permite encolher se necessário */
+    }
+
+    /* Aumentei o limite para o texto não quebrar o "PRO" */
+    .brand-text-col {
+        max-width: 190px; /* Era 150px, aumentei para caber nomes longos */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* Ajuste fino na fonte do título */
+    .brand-title {
+        font-size: 0.95rem; /* Um pouquinho menor para garantir */
+        white-space: nowrap; /* Tenta forçar uma linha única */
+    }
+    
+    .brand-subtitle {
+        font-size: 0.55rem;
+        white-space: nowrap;
+        letter-spacing: 0.2px;
+    }
+    
+    /* 4. Espaçamento geral da barra de navegação */
+    nav {
+        gap: 5px; 
+        padding: 0 5px; /* Garante margem de segurança nas bordas */
+    }
 }
