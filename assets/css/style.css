@@ -49,7 +49,7 @@ body {
     color: var(--text-main);
     line-height: 1.6;
     background-color: var(--bg-body);
-    overflow-x: hidden; /* Impede que o site role para os lados */
+	overflow-x: hidden; /* Impede que o site role para os lados */
 }
 
 img {
@@ -2211,3 +2211,77 @@ body.dark-mode .share-copy:hover {
     transform: translateY(-2px);
 }
 
+/* --- ESTILO DA LOGO --- */
+.brand-logo-full {
+    display: flex;
+    align-items: center; 
+    gap: 10px;           
+    text-decoration: none;
+}
+
+/* O Ícone de Imagem (Tamanho Forçado) */
+.brand-icon-img {
+    height: 32px !important; /* Força o tamanho menor */
+    width: auto;
+    margin-top: -2px;        /* Ajuste de alinhamento vertical */
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    flex-shrink: 0;
+}
+
+.brand-text-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;     /* Mantém o título e subtítulo próximos */
+}
+
+.brand-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 1.1rem; /* AUMENTE OU DIMINUA TITULO DA LOGO (ex: 1.6rem ou 22px) */
+    color: var(--primary); /* Azul */
+    letter-spacing: -0.5px;
+    margin-bottom: 2px;
+}
+
+.brand-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.68rem; /* AUMENTE OU DIMINUA SUBTITULO DA LOGO (ex: 0.8rem ou 12px) */
+    color: var(--accent); /* Laranja */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* --- AJUSTE PARA CELULAR (MOBILE) --- */
+@media (max-width: 480px) {
+    .brand-icon-img {
+        height: 35px; /* Diminui um pouco no celular para não quebrar */
+    }
+    .brand-title {
+        font-size: 1.1rem; /* TAMANHO DO TITULO LOGO NO CELULAR */
+    }
+    .brand-subtitle {
+        font-size: 0.6rem; /* TAMANHO DO SUBTITULO NO CELULAR */
+    }
+    .brand-logo-full {
+        gap: 8px;
+    }
+}
+
+/* --- MODO ESCURO --- */
+body.dark-mode .brand-title {
+    color: var(--text-title); /* Fica branco no modo escuro */
+}
+
+/* --- AJUSTE DA LOGO ESPECÍFICO PARA O RODAPÉ --- */
+.footer-brand-ajuste {
+    margin-bottom: 20px; /* Empurra o texto de descrição para baixo */
+    display: inline-flex; /* Garante que fique alinhado à esquerda */
+}
+
+/* Opcional: Se quiser a logo do rodapé levemente menor que a do topo */
+.footer-brand-ajuste .brand-icon-img {
+    height: 35px !important; /* Um pouco mais discreto no rodapé */
+}
