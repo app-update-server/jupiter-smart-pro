@@ -3,43 +3,48 @@
 
     <url>
         <loc>https://jupiterpro.textospropagandas.com.br/</loc>
-        <lastmod>2025-12-06</lastmod>
+        <lastmod>2025-12-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://jupiterpro.textospropagandas.com.br/blog.html</loc>
-        <lastmod>2025-12-06</lastmod>
+        <lastmod>2025-12-08</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://jupiterpro.textospropagandas.com.br/afiliados.html</loc>
-        <lastmod>2025-12-06</lastmod>
+        <lastmod>2025-12-08</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://jupiterpro.textospropagandas.com.br/sobre.html</loc>
-        <lastmod>2025-12-06</lastmod>
+        <lastmod>2025-12-08</lastmod>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://jupiterpro.textospropagandas.com.br/politica.html</loc>
+        <lastmod>2025-12-08</lastmod>
+        <priority>0.5</priority>
+    </url>
 
     <url>
-        <loc>https://jupiterpro.textospropagandas.com.br/assets/posts/controle-financeiro-jupiter-pro.html</loc>
-        <lastmod>2025-12-05</lastmod>
+        <loc>https://jupiterpro.textospropagandas.com.br/post.html?id=controle-financeiro-jupiter-pro</loc>
+        <lastmod>2025-12-08</lastmod>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://jupiterpro.textospropagandas.com.br/assets/posts/importancia-controle-financeiro.html</loc>
-        <lastmod>2025-12-05</lastmod>
+        <loc>https://jupiterpro.textospropagandas.com.br/post.html?id=importancia-controle-financeiro</loc>
+        <lastmod>2025-12-08</lastmod>
         <priority>0.8</priority>
     </url>
 
     <url>
-        <loc>https://jupiterpro.textospropagandas.com.br/assets/posts/jupiter-lite-solidario.html</loc>
-        <lastmod>2025-12-06</lastmod>
+        <loc>https://jupiterpro.textospropagandas.com.br/post.html?id=jupiter-lite-solidario</loc>
+        <lastmod>2025-12-08</lastmod>
         <priority>0.8</priority>
-    </url>    
+    </url>     
 
 </urlset>
